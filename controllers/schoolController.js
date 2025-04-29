@@ -33,7 +33,7 @@ exports.addSchool = async (req, res) => {
 
 // get List of Schools
 exports.listSchools = async (req, res) => {
-  res.send("hlo")
+  // res.send("hlo")
   try {
     const userLat = parseFloat(req.query.latitude);
     const userLon = parseFloat(req.query.longitude);
