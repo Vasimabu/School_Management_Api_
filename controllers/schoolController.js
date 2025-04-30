@@ -3,6 +3,7 @@ const { getDistanceFromLatLonInKm } = require('../utils/dist_cal');
 
 // Add School data
 exports.addSchool = async (req, res) => {
+  
   try {
     const { name, address, latitude, longitude } = req.body;
 
