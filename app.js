@@ -9,7 +9,11 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.use('/', schoolRoutes);
+app.use('/api', schoolRoutes);
+app.get('/test', (req, res) => {
+  res.send('Server is working');
+});
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
