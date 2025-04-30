@@ -10,6 +10,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api', schoolRoutes);
+
 app.get('/test', (req, res) => {
   res.send('Server is working');
 });
